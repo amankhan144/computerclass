@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>A-Tech</title>
+        
+<style>
+.mySlides {display:none;}
+</style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
+
+    </head>
+    <body>
+
+        <div class="main">
+
+            <div class="row1">
+                A-Tech IT Solution Pvt. Ltd
+            </div>
+            <div class="row2">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>Home</a>
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>Home</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Home</a>
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>Home</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a>Home</a></li>
+                </ul>
+            
+            </div>
+        <div class="row3">
+            <div class="rwo3-col1">
+                <iframe width="600px" height="500px" src="https://www.youtube.com/embed/qafu9QR0idQ?si=QJPi9iQ1TN20q-MF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="rwo3-col2">
+                <img class="mySlides" src="12.jpg"      width="1200px" height="500px">
+                <img class="mySlides" src="tender.jpg"  width="1200px" height="500px">
+                <img class="mySlides" src="contact.jpg"  width="1200px" height="500px">
+                <img class="mySlides" src="project.jpg"  width="1200px" height="500px">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+        </div>
+        
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>
