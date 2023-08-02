@@ -87,4 +87,22 @@
                 float: left;
             }
              
+            .row5{
+                width: 1800px;
+                height: 200px;
+                float: left;
+            }
+             .row5-col1{
+                width: 1200px;
+                height: 200px;
+                float: left;
+                background-color: rgb(165, 165, 158);
+                text-align: center;
+                font-size: 30px;
+            }
+             .row5-col2{
+                width: 600px;
+                height: 200px;
+                float: left;
+            }
     
